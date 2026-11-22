@@ -1,17 +1,17 @@
 {
   "expo": {
-    "name": "StorageApp",
-    "slug": "StorageApp",
+    "name": "Lectern",
+    "slug": "lectern",
     "version": "1.0.0",
     "orientation": "portrait",
     "icon": "./assets/icon.png",
-    "userInterfaceStyle": "light",
+    "userInterfaceStyle": "automatic",
     "ios": {
       "supportsTablet": true
     },
     "android": {
       "adaptiveIcon": {
-        "backgroundColor": "#E6F4FE",
+        "backgroundColor": "#17213F",
         "foregroundImage": "./assets/android-icon-foreground.png",
         "backgroundImage": "./assets/android-icon-background.png",
         "monochromeImage": "./assets/android-icon-monochrome.png"
@@ -20,6 +20,28 @@
     },
     "web": {
       "favicon": "./assets/favicon.png"
+    },
+    "plugins": [
+      "expo-router",
+      "expo-status-bar",
+      "expo-font",
+      [
+        "expo-splash-screen",
+        {
+          "backgroundColor": "#F7F8FA",
+          "image": "./assets/splash-icon.png",
+          "imageWidth": 120,
+          "dark": {
+            "image": "./assets/splash-icon.png",
+            "backgroundColor": "#0E1116"
+          }
+        }
+      ],
+      "expo-sharing"
+    ],
+    "scheme": "lectern",
+    "experiments": {
+      "typedRoutes": true
     }
   }
 }
