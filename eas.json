@@ -3,13 +3,19 @@
     "appVersionSource": "remote"
   },
   "build": {
+    "base": {
+      "env": {
+        "EXPO_PUBLIC_SUPABASE_URL": "https://woodsjxhctfazpnxdgbe.supabase.co",
+        "EXPO_PUBLIC_SUPABASE_PUBLISHABLE_KEY": "sb_publishable_TSchz92DS4lY4UHUl8h9ZA_04G-4hkb"
+      }
+    },
     "preview": {
+      "extends": "base",
       "distribution": "internal",
-      "environment": "preview",
       "android": { "buildType": "apk" }
     },
     "production": {
-      "environment": "production",
+      "extends": "base",
       "autoIncrement": true
     }
   },
