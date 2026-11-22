@@ -40,3 +40,6 @@ yarn-error.*
 # generated native folders
 /ios
 /android
+
+# EAS build profiles (contain the Supabase URL/key). Still uploaded to EAS via .easignore.
+eas.json
